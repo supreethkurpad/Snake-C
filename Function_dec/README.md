@@ -1,2 +1,2 @@
-### All the function definitions go here
+### All the function declaration go here
 ### Thank you
