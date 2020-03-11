@@ -1,0 +1,2 @@
+void boxInit(int n, char p[n][n]);
+void displayBox(int n, char p[n][n]); *Included if required for debugging*
