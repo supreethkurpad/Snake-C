@@ -15,7 +15,8 @@ Please provide adequate comments and documentation for efficient debugging and u
 
 Modules
 
-1. The box: Write a function, that takes in the dimensions of a 2-D  character array and sets the array to look like a bounded box
+1. Supreeth
+The box: Write a function, that takes in the dimensions of a 2-D  character array and sets the array to look like a bounded box
            Ex: 0000000000
                0        0
                0        0
@@ -25,9 +26,11 @@ Modules
                         p[][]: The matrix
             Note: function must not display box, but just seth the 2-D array to look like a bounded box
                         
-2. Draw the snake: Write a function, that takes in an array of positions(of the snake body), position of the food, the 2-D box array, and plots the snake on the board. 
+2. Supreeth
+Draw the snake: Write a function, that takes in an array of positions(of the snake body), position of the food, the 2-D box array, and plots the snake on the board. 
                     Note: Remember to erase the board each time you draw the new position. 
-3. Food generator: Write a function that randomly comes up with a position on the board for the food to appear
+3. Supreeth
+Food generator: Write a function that randomly comes up with a position on the board for the food to appear
                     Parameters: int p[]--[array in which the x,y position will be stored after predicting
 4. Collision detection: Write a function that take in an array of positions of the snake body, and returns 1, if it collides(overlaps) with the boundary or itself, else it returns 0
                     Parameters: int p[][] 
