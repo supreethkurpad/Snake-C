@@ -24,11 +24,14 @@ Modules
             Parameters: n: The dimension if the sqaure matrix
                         p[][]: The matrix
             Note: function must not display box, but just seth the 2-D array to look like a bounded box
+            -Supreeth G Kurpad
                         
 2. Draw the snake: Write a function, that takes in an array of positions(of the snake body), position of the food, the 2-D box array, and plots the snake on the board. 
                     Note: Remember to erase the board each time you draw the new position. 
+                    -Supreeth G Kurpad
 3. Food generator: Write a function that randomly comes up with a position on the board for the food to appear
                     Parameters: int p[]--[array in which the x,y position will be stored after predicting
+                    -Supreeth G Kurpad
 4. Collision detection: Write a function that take in an array of positions of the snake body, and returns 1, if it collides(overlaps) with the boundary or itself, else it returns 0
                     Parameters: int p[][] 
 5. Clear terminal: Write a function, that clear the windows/linux terminal
