@@ -1,0 +1,68 @@
+Author: @LawJarp_A
+PROJECT NAME: SNAKE_C
+Programming Language: C
+
+==============================================================================================================================================
+==============================================================================================================================================
+
+SPLIT OF WORK
+
+Following are modules whose functionality is described, please write a function to achieve the functionality.
+Save the function definition in a file, named, 'module_no.c' and function definition in a text file named 'module_no_def.txt'
+Please provide adequate comments and documentation for efficient debugging and usage.
+
+==============================================================================================================================================
+
+Modules
+
+1. Supreeth
+The box: Write a function, that takes in the dimensions of a 2-D  character array and sets the array to look like a bounded box
+           Ex: 0000000000
+               0        0
+               0        0
+               0        0
+               0000000000
+            Parameters: n: The dimension if the sqaure matrix
+                        p[][]: The matrix
+            Note: function must not display box, but just seth the 2-D array to look like a bounded box
+                        
+2. Supreeth
+Draw the snake: Write a function, that takes in an array of positions(of the snake body), position of the food, the 2-D box array, and plots the snake on the board. 
+                    Note: Remember to erase the board each time you draw the new position. 
+3. Supreeth
+Food generator: Write a function that randomly comes up with a position on the board for the food to appear
+                    Parameters: int p[]--[array in which the x,y position will be stored after predicting
+4. Collision detection: Write a function that take in an array of positions of the snake body, and returns 1, if it collides(overlaps) with the boundary or itself, else it returns 0
+                    Parameters: int p[][] 
+5. Clear terminal: Write a function, that clear the windows/linux terminal
+                    Note: The required libraries must be mentioned and imported, the function must work both on linux terminal and Windows command prompt.
+
+                    
+==============================================================================================================================================
+==============================================================================================================================================
+
+Choose which module you want to work on and Append your name next to the number, and please finish by 
+            
+        
+Information about structure of program (as of now):
+    1. Start screen
+    2. Game screen
+    3. End credit screen
+    Detailed version: 1. Start screen: Displays Title, and ASCII logo, press Q to quit, S to see leaderboard, and C to continue to the game
+                                       Take in the Name of the user, press Enter'
+                      2. Game screen: Use starts with 0 score and 3 lives, after 3 lives, goto end credit screen.
+                      3. End credit screen: Thank you,
+                                            Show the user's score, Show the leaderboard, Press Q to quit, R to try again.
+                                            
+==============================================================================================================================================                                            
+I
+Information about variables used in the program(as of now)
+1. struct snake:int l: Length of snake
+                int pos[2500][2]: array of positions of snake body
+                int speed
+                int direction: 1-up, 2-down, 3-left, 4-right
+2. char board[50][50]: The board where the games playes out
+3...
+4...
+More to come
+==============================================================================================================================================
