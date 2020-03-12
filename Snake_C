@@ -22,10 +22,12 @@ The box: Write a function, that takes in the dimensions of a 2-D  character arra
                0        0
                0        0
                0000000000
-            Parameters: n: The dimension if the sqaure matrix
+            Parameters: l,b: The dimension if the rectangular matrix of length l and breadth b.
                         p[][]: The matrix
-            Note: function must not display box, but just seth the 2-D array to look like a bounded box
-                        
+            Note: function must not display box, but just seth the 2-D array to look like a bounded box. Funtion to display box included too.
+                      To set box - boxInit(int l, int b, char p[][]) 
+                      To display box - displayBox(int l, int b, char p[][])
+                      main funtion included for debugging.
 2. Supreeth
 Draw the snake: Write a function, that takes in an array of positions(of the snake body), position of the food, the 2-D box array, and plots the snake on the board. 
                     Note: Remember to erase the board each time you draw the new position. 
