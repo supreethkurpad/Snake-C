@@ -37,6 +37,8 @@ Food generator: Write a function that randomly comes up with a position on the b
 5. Clear terminal: Write a function, that clear the windows/linux terminal
                     Note: The required libraries must be mentioned and imported, the function must work both on linux terminal and Windows command prompt.
 
+6. Move snake: Write a function that takes in a number [1,2,3,4], and moves the body of the snake accordingly.
+                      Parameters: int n, int p[][], int direction, int board[][]
                     
 ==============================================================================================================================================
 ==============================================================================================================================================
