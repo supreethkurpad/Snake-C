@@ -26,4 +26,40 @@ In the second link, just learn up to the module named Windows
 ## Intro:
 Before we split work and start coding, let's understand how the program needs to work.
 
-##
+## Basics:
+The **board** is the arena where the game occurs, the snake is displayed on the board. The dimensions of the board is 50x50.
+In the program the board is represented as 50x50 2D character array. 
+The snake, which is the main part is represented by a *linked list*. Every element of the snake contains {positions x,y, direction, pointer to next body, pointer to prev body}
+## Game flow
+Initially, the snake moves is the upward direction at speed, 1 line per second. When a key is captured, based on the key, the snake changes the direction and continues in that direction.
+## How the snake moves.
+Every item in the *linked list* snake is a body. Ex: if the snake was AAAAAAA. That means, there are 7 elements in the *linked list* snake.
+The topmost element is called head.
+Let's consider the movemnet of snake with two elements, the movement of the second element is dependadnt on the first. 
+Case 1: If, the direction of head is same as tail, then any increase is position of head is applied for tail
+Case 2: If the direction of the head is different, then we must move one unit in the same direction and then change the direction of the tail to equal the head.
+
+# Work
+
+### Linked list snake
+Make a linked list implementation of the snake, attributes are, int x,int y, int dir, pointer next, pointer prev.
+
+### Add body
+Make a function with takes the pointer to the head as input as adds a new body element to the snake with the direction same as element before it.
+
+### Init box
+Write a function, that takes in the dimensions of a 2-D  character array and sets the array to look like a bounded box
+Parameters: l,b: The dimension if the rectangular matrix of length l and breadth b.
+                        p[][]: The matrix
+Note: function must not display box, but just seth the 2-D array to look like a bounded box. Funtion to display box included too.
+To set box - boxInit(int l, int b, char p[][]) 
+To display box - displayBox(int l, int b, char p[][])
+main funtion included for debugging.
+
+### show
+Make a function to display the box on the stdscr using ncurses module and using the function mvprintw(y,x,data)
+
+### Initialse the snake
+Make a program to take the linked list pointer as input as initilaise all the variable to a default value. x = 20,y=20,dir=8
+Add a another element(body element)
+therefore after initialosation, we should be linked list with head and one body elemnet.
