@@ -1,0 +1,78 @@
+//Movement Algorithm
+
+#define UP 72
+#define DOWN 80
+#define RIGHT 77
+#define LEFT 75
+
+void main()
+{
+	if((key==RIGHT && Direction!=LEFT||Direction!=RIGHT)||(key==RIGHT && Direction!=LEFT||Direction!=RIGHT)||(key==DOWN && Direction!=UP||Direction!=DOWN)||(key==UP && Direction!=UP||Direction!=DOWN))
+	{
+		if(key==DOWN)
+		{ snakePos[0].y--; DOWN();}		 //snakePos[0] refers to head of snake
+		if(key==UP)
+		{ snakePos[0].y++; UP();}
+		if(key==RIGHT)
+		{ snakePos[0].x++; RIGHT();}
+		if(key==LEFT)
+		{ snakePos[0].x--; LEFT();}
+
+	}	
+}
+
+void DOWN()
+{
+	for(int i=0;i<length;i++)    	//here length is the size of the snakePos array or snake length	 
+	{
+            if(len==0)
+                printf("@");
+            else
+                printf("*");
+	 snakePos[i].x=head.x;
+         snakePos[i].y=head.y-i;
+        }
+	
+}
+
+
+void UP()
+{
+	for(int i=0;i<length;i++)
+	{
+            if(len==0)
+                printf("@");
+            else
+                printf("*");
+	 snakePos[i].x=head.x;
+         snakePos[i].y=head.y+i;
+
+}
+
+
+void RIGHT()
+{
+	for(int i=0;i<length;i++)
+	{
+            if(len==0)
+                printf("@");
+            else
+                printf("*");
+	 snakePos[i].x=head.y;
+         snakePos[i].y=head.x+i;
+
+}
+
+
+void LEFT()
+{
+	for(int i=0;i<length;i++)
+	{
+            if(len==0)
+                printf("@");
+            else
+                printf("*");
+	 snakePos[i].x=head.y;
+         snakePos[i].y=head.x-i;
+
+}
