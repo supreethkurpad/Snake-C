@@ -1,0 +1,9 @@
+void drawSnake(int l, int b, char p[l][b], int snakePos[][2], int len);
+/*
+Function takes in the following parameters:
+l-Length of the box
+b-Breadth of the box
+p-The character array used to plot the box
+snakePos - A 2-C array having co-ordinates of the snake with the first element as head.
+len - length of snakePos(Number of rows)
+*/
