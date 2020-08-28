@@ -1,6 +1,0 @@
-//Function Declarations
-
-//Pass length and breadth. Square making Box very tall and narrow  
-
-void boxInit(int l, int b, char p[50][100]);     
-void displayBox(int l, int b, char p[50][100]);
